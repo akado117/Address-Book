@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2014 at 06:47 PM
+-- Generation Time: Mar 24, 2014 at 02:32 PM
 -- Server version: 5.5.35-0ubuntu0.13.10.2
 -- PHP Version: 5.5.3-1ubuntu2.1
 
@@ -36,17 +36,20 @@ CREATE TABLE IF NOT EXISTS `address` (
   `zip` varchar(10) NOT NULL,
   PRIMARY KEY (`addressId`),
   KEY `addressId` (`addressId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `address`
 --
 
 INSERT INTO `address` (`addressId`, `firstName`, `lastName`, `street`, `city`, `state`, `zip`) VALUES
-(4, 'Mike', 'Wykouski', '1446 Annandale CT', 'A^2', 'Michigan', '@0001'),
 (6, 'Daniel', 'Wypizinski', 'Twitter blvd', 'Cinci', 'OH', '14921'),
-(11, 'Bob', 'Villa', '1337 st', 'Gmer', 'Oh', ''),
-(12, 'Alex', 'Kaidan', '1446 Annandale CT', 'Ann Arbor', 'Michigan', '48108');
+(12, 'Alex', 'Kaidan', '1446 Annandale CT', 'Ann Arbor', 'Michigan', '48108'),
+(13, 'Mike', 'Koferson', '401 S main st', 'Akron', 'OH', '44311'),
+(14, 'Jen', 'Voit', '562 Homerow ave', 'Buddle', '', '42385'),
+(15, 'Ryan', 'Lucas', '1234 Derp st', 'Smarts ave', 'IL', '43890'),
+(16, 'Alex', 'Kiltos', '1321 North ave', 'Rockingham', 'MI', '48900'),
+(17, 'Alex', 'Kiltos', '1321 North ave', 'Rockingham', 'MI', '48900');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
